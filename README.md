@@ -34,10 +34,6 @@ pipeline {
                 dir("mars/libraries") {
                     sh "python2.7 build_android.py"
                 }
-            }
-        }
-        stage('BuildAAR'){
-            steps {
                 dir("mars/libraries/mars_android_sdk"){
                     sh "./gradlew build"
                 }
