@@ -55,8 +55,14 @@ pipeline {
 
 example for bash  
 ```bash
-coming soon...
+$docker run -it --name proto -v /path/to/proto:/proto leondevlifelog/proto:latest
+root@xxxxxxxx $cd /proto/mars/libraries && python2.7 build_android.py && cd mars_android_sdk && ./gradlew build
 ```
+
+output path
+
+`mars/libraries/mars_android_sdk/build/outputs/aar/*.aar`
+
 
 ## License
 
